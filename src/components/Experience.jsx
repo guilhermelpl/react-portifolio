@@ -35,7 +35,7 @@ const Experience = ({ translate }) => {
                 ? experience.role
                 : experience.funcao + " - " + experience.company}
             </h6>
-            <p>{experience.description}</p>
+            <p>{translate ? experience.description : experience.descricao}</p>
             {experience.technologies.map((technologie, index) => (
               <motion.span
                 key={index}
