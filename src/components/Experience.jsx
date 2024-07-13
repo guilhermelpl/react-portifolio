@@ -32,7 +32,7 @@ const Experience = ({ translate }) => {
           >
             <h6 className="mb-2 font-semibold">
               {translate
-                ? experience.role
+                ? experience.role + " - " + experience.company
                 : experience.funcao + " - " + experience.company}
             </h6>
             <p>{translate ? experience.description : experience.descricao}</p>
