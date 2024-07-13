@@ -20,7 +20,12 @@ const Contact = ({ translate }) => {
       >
         <p className="my-3">{CONTACT.address}</p>
         <p className="my-3">{CONTACT.phoneNo}</p>
-        <a href="#" className="border-b">
+        <a
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT.email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-b"
+        >
           {CONTACT.email}
         </a>
       </motion.div>
