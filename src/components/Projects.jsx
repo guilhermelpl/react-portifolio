@@ -20,8 +20,8 @@ const Projects = ({ translate }) => {
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              width={350}
-              height={350}
+              width={250}
+              height={250}
               src={project.image}
               alt="img"
               className="max-w-full h-auto lg:max-w-md"

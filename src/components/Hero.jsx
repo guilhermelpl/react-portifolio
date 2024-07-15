@@ -2,6 +2,7 @@ import { HERO_CONTENT_EN, HERO_CONTENT_PT } from "../constants";
 import { motion } from "framer-motion";
 
 import photo from "../assets/picture.png";
+import { FiArrowRightCircle } from "react-icons/fi";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -43,6 +44,23 @@ const Hero = ({ translate }) => {
               {translate ? HERO_CONTENT_EN : HERO_CONTENT_PT}
             </motion.p>
           </div>
+          <div className="flex flex-col lg:items-start">
+            <motion.div
+              variants={container(1)}
+              initial="hidden"
+              animate="visible"
+              className="my-2 max-w-xl py-6 lg:items-start flex items-center"
+            >
+              {translate ? "Let's connect" : "Vamos nos conectar!"}
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=guilopes1003@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiArrowRightCircle className="my-1 ml-2 cursor-pointer" />
+              </a>
+            </motion.div>
+          </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-6">
           <div className="flex justify-center">
@@ -55,7 +73,6 @@ const Hero = ({ translate }) => {
               className="max-w-full h-auto lg:max-w-md"
             />
           </div>
-          
         </div>
       </div>
     </div>

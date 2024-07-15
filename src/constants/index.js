@@ -17,8 +17,8 @@ export const EXPERIENCES = [
     funcao: `Estagiario de programação`,
     role: `Programming Intern`,
     company: `Segure - Segurança do Trabalho`,
-    descricao: `Nesta experiência trabalhei com a implementação de novas funcionalidades e manutenções no software da empresa. Desenvolvendo as aplicações web utilizando como ferramentas PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) e MySQL.`,
-    description: `In this experience I worked with the implementation of new features and maintenance in the company's software. Developing web applications using PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) and MySQL tools.`,
+    descricao: `Nesta experiência atuei na implementação de novas funcionalidades e na manutenção do software da organização. Desenvolvi aplicações web utilizando PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) e MySQL. Dentre as minhas contribuições mais significativas, destaco a criação de um método de automatização dos módulos de GHE e Plano de Ação no site, que facilitou a criação de documentos e reduziu significativamente o prazo de entrega. Essa inovação proporcionou um fluxo de trabalho muito mais eficiente para os funcionários responsáveis por essas tarefas.`,
+    description: `In this experience I worked with the implementation of new features and maintenance in the company's software. Developing web applications using PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) and MySQL tools. My most significant contributions, I highlight the creation of a method to automate the GHE and Action Plan modules on the website, which facilitated document creation and significantly reduced delivery time. This innovation provided a much more efficient workflow for the employees responsible for these tasks.`,
     technologies: ["Javascript", "React.js", "PHP (CodeIgniter)" ,"Bootstrap", "MySQL"],
   },
 ];

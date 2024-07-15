@@ -1,5 +1,5 @@
 import logo from "../assets/Logo.png";
-import resume from "../assets/GuilhermeLopesLima.pdf";
+import resume from "../assets/curriculum/GuilhermeLopesLima.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdGTranslate } from "react-icons/md";
 import { MdDownload } from "react-icons/md";
