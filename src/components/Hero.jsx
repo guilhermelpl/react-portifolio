@@ -25,7 +25,7 @@ const Hero = ({ translate }) => {
               animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16"
             >
-              Guilherme Lopes
+              Guilherme Lopes Lima
             </motion.h1>
             <motion.span
               variants={container(0.5)}
@@ -53,7 +53,7 @@ const Hero = ({ translate }) => {
             >
               {translate ? "Let's connect" : "Vamos nos conectar!"}
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=guilopes1003@gmail.com"
+                href="https://www.linkedin.com/in/guilherme-lopes-lima-323324219/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
