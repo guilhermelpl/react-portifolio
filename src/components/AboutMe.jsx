@@ -1,5 +1,5 @@
 import aboutImg from "../assets/photo_about.jpg";
-import { ABOUT_TEXT_EN, ABOUT_TEXT_PT } from "../constants";
+import { ABOUT_TEXT_EN, ABOUT_TEXT_PT } from "../config/constants";
 import { motion } from "framer-motion";
 
 const AboutMe = ({ translate }) => {

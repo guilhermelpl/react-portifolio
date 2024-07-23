@@ -1,6 +1,6 @@
-import project1 from "../assets/projects/project1.jpg";
-import project2 from "../assets/projects/project2.jpg";
-import project3 from "../assets/projects/project3.jpg";
+import project1 from "../../assets/projects/project1.jpg";
+import project2 from "../../assets/projects/project2.jpg";
+import project3 from "../../assets/projects/project3.jpg";
 
 export const HERO_CONTENT_EN = `I am a full stack developer with a abilitys for crafting robust and scalable web applications. With 1,5 years of hands-on experience, I have honed my skills in front-end technologies like JavaScript and React.js, as well as back-end technologies like Laravel, MySQL and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 

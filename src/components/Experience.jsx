@@ -1,4 +1,4 @@
-import { EXPERIENCES } from "../constants";
+import { EXPERIENCES } from "../config/constants";
 import { motion } from "framer-motion";
 
 const Experience = ({ translate }) => {

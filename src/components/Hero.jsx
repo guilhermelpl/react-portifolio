@@ -1,4 +1,4 @@
-import { HERO_CONTENT_EN, HERO_CONTENT_PT } from "../constants";
+import { HERO_CONTENT_EN, HERO_CONTENT_PT } from "../config/constants";
 import { motion } from "framer-motion";
 
 import photo from "../assets/picture.png";
