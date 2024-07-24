@@ -30,7 +30,7 @@ const NavBar = ({
 
   return (
     <>
-      <nav className="mb-20 flex flex-col mt-4 sm:flex-row items-center justify-between py-2 px-4 sm:px-8">
+      <nav className="mb-20 flex flex-col mt-4 sm:flex-row items-center justify-between py-2">
         <div>
           <img className="mx-2 w-10" src={logo} alt="Logo" />
         </div>
