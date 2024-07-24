@@ -1,8 +1,8 @@
-import { HERO_CONTENT_EN, HERO_CONTENT_PT } from "../config/constants";
 import { motion } from "framer-motion";
 
 import photo from "../assets/picture.png";
 import { FiArrowRightCircle } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -13,7 +13,9 @@ const container = (delay) => ({
   },
 });
 
-const Hero = ({ translate }) => {
+const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -33,7 +35,7 @@ const Hero = ({ translate }) => {
               animate="visible"
               className="bg-gradient-to-r from-red-500 via-orange-300 to bg-orange-500 bg-clip-text text-4xl tracking-tight text-transparent"
             >
-              {translate ? "Full Stack Developer" : "Desenvolvedor Full Stack"}
+              {t("role")}
             </motion.span>
             <motion.p
               variants={container(1)}
@@ -41,7 +43,7 @@ const Hero = ({ translate }) => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              {translate ? HERO_CONTENT_EN : HERO_CONTENT_PT}
+              {t("heroContent")}
             </motion.p>
           </div>
           <div className="flex flex-col lg:items-start">
@@ -51,7 +53,7 @@ const Hero = ({ translate }) => {
               animate="visible"
               className="my-2 max-w-xl py-6 lg:items-start flex items-center"
             >
-              {translate ? "Let's connect" : "Vamos nos conectar!"}
+              {t("connectButton")}
               <a
                 href="https://www.linkedin.com/in/guilherme-lopes-lima-323324219/"
                 target="_blank"

@@ -1,12 +1,31 @@
-import { FaBriefcase, FaEnvelope, FaGithub, FaProjectDiagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/Logo.png";
 import resume from "../assets/curriculum/GuilhermeLopesLima.pdf";
 import { MdGTranslate } from "react-icons/md";
 import { MdDownload } from "react-icons/md";
 
-const NavBar = ({ translate, setTranslate, experienceRef, projectsRef, contactRef }) => {
+const NavBar = ({
+  experienceRef,
+  projectsRef,
+  contactRef,
+}) => {
   const Section = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const {
+    t,
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+
+  const [currentLanguage, setCurrentLanguage] = useState(language);
+
+  const handleChangeLanguage = () => {
+    const newLanguage = currentLanguage === "pt" ? "en" : "pt";
+    changeLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
   };
 
   return (
@@ -20,27 +39,25 @@ const NavBar = ({ translate, setTranslate, experienceRef, projectsRef, contactRe
             className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
             onClick={() => Section(experienceRef)}
           >
-            {translate ? "Experiences" : "Experiências"}
+            {t('header')}
           </span>
           <span
             className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
             onClick={() => Section(projectsRef)}
           >
-            {translate ? "Projects" : "Projetos"}
+            {t('projectsSection')}
           </span>
           <span
             className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
             onClick={() => Section(contactRef)}
           >
-            {translate ? "Contact Me" : "Contate-Me"}
+            {t('contactSection')}
           </span>
         </div>
         <div className="flex gap-4 mt-4 sm:mt-0 items-center">
           <MdGTranslate
             className="hover:text-orange-500 transition duration-300 cursor-pointer text-2xl"
-            onClick={() => {
-              setTranslate(!translate);
-            }}
+            onClick={handleChangeLanguage}
           />
           <FaGithub
             className="hover:text-orange-500 transition duration-300 cursor-pointer text-2xl"

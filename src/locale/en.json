@@ -1,0 +1,53 @@
+{
+    "header": "Experiences",
+    "projectsSection": "Projects",
+    "contactSection": "Contact Me",
+
+    "role": "Full Stack Developer",
+    "heroContent": "I am a full stack developer with abilities for crafting robust and scalable web applications. With 1.5 years of hands-on experience, I have honed my skills in front-end technologies like JavaScript and React.js, as well as back-end technologies like Laravel, MySQL, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
+    "connectButton": "Let's Connect",
+
+    "aboutSection": "About Me",
+    "aboutMeContent": "I am a dedicated and versatile full stack developer, passionate about creating efficient and user-friendly web applications. With one year of professional experience, I have worked with various technologies, including React, PHP (CodeIgniter), Bootstrap, and MySQL. My journey in web development began with a deep curiosity about how websites work and evolved into a career where I continuously strive to learn and adapt to new challenges. I excel in teamwork and enjoy solving complex problems to deliver high-quality solutions. Outside of programming, I enjoy exploring souls-like and indie games, where I can even apply programming knowledge to create game patterns and strategies. I believe these experiences enhance my analytical and problem-solving skills, which I bring to my software development projects.",
+
+    "technologiesSection": "Technologies",
+
+    "experiencesSection" : "Experiences",
+
+    "experiences": [
+        {
+            "year": "2023 - Present",
+            "role": "Programming Intern",
+            "company": "Segure - Segurança do Trabalho",
+            "description": "In this experience, I worked with the implementation of new features and maintenance in the company's software. Developing web applications using PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs), and MySQL tools. My most significant contributions include the creation of a method to automate the GHE and Action Plan modules on the website, which facilitated document creation and significantly reduced delivery time. This innovation provided a much more efficient workflow for the employees responsible for these tasks.",
+            "technologies": ["JavaScript", "React.js", "PHP (CodeIgniter)", "Bootstrap", "MySQL"]
+        }
+    ],
+
+    "projects": [
+        {
+          "title": "Pokedex Website",
+          "image": "/src/assets/projects/project1.jpg",
+          "description": "A fully functional Pokedex where you can filter by characters, see their abilities, and more!",
+          "technologies": ["HTML", "CSS", "React.js", "Tailwind"]
+        },
+        {
+          "title": "E-commerce",
+          "image": "/src/assets/projects/project2.jpg",
+          "description": "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+          "technologies": ["HTML", "CSS", "React.js", "Tailwind", "Java Spring Boot", "PostgreSQL"]
+        },
+        {
+          "title": "Login Screen",
+          "image": "/src/assets/projects/project3.jpg",
+          "description": "A screen where you can register, log in, and request password recovery.",
+          "technologies": ["HTML", "CSS", "React.js", "Tailwind", "Laravel", "Docker", "MySQL"]
+        }
+      ],
+
+    "adressSection": "Adress: ",
+    "phoneSection": "phone: ",
+    "address": "Canoas, RS",
+    "phoneNumber": "+55 51 998267655",
+    "email": "guilopes1003@gmail.com"
+}

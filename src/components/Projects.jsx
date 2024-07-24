@@ -1,19 +1,21 @@
 import React from "react";
-import { PROJECTS } from "../config/constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const Projects = ({ translate }) => {
+const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl "
       >
-        {translate ? "Projects" : "Projetos"}
+        {t("projectsSection")}
       </motion.h2>
-      {PROJECTS.map((project, index) => (
+      {t("projects", { returnObjects: true }).map((project, index) => (
         <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
           <div className="w-full lg:w-1/4">
             <motion.img
@@ -33,10 +35,8 @@ const Projects = ({ translate }) => {
             transition={{ duration: 1.5 }}
             className="w-full max-w-xl lg:w-3/4"
           >
-            <h6 className="mb-2 font-semibold">
-              {translate ? project.title : project.titulo}
-            </h6>
-            <p>{translate ? project.description : project.descricao}</p>
+            <h6 className="mb-2 font-semibold">{project.title}</h6>
+            <p>{project.description}</p>
             {project.technologies.map((technologie, index) => (
               <motion.span
                 key={index}

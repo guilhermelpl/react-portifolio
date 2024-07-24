@@ -1,0 +1,54 @@
+{
+    "header": "Experiências",
+    "projectsSection": "Projetos",
+    "contactSection": "Contate Me",
+
+    "role": "Desenvolvedor Full Stack",
+    "heroContent": "Sou um desenvolvedor full stack com habilidade para criar aplicações web robustas e escaláveis. Com um ano e meio de experiência prática, aprimorei minhas habilidades em tecnologias front-end como React, bem como em tecnologias back-end como Laravel, MySQL e PostgreSQL. Meu objetivo é aproveitar minha experiência para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem experiências excepcionais ao usuário.",
+
+    "connectButton": "Vamos nos conectar!",
+
+    "aboutSection": "Sobre Mim",
+    "aboutMeContent": "Sou um desenvolvedor full stack dedicado e versátil, apaixonado por criar aplicações web eficientes e fáceis de usar. Com um ano de experiência profissional, já trabalhei com diversas tecnologias, incluindo React, PHP (CodeIgniter), Bootstrap e MySQL. Minha jornada no desenvolvimento web começou com uma curiosidade profunda sobre o funcionamento dos sites e evoluiu para uma carreira onde me dedico continuamente a aprender e me adaptar a novos desafios. Tenho facilidade em trabalhar em equipe e gosto de resolver problemas complexos para entregar soluções de alta qualidade. Fora da programação, gosto de me aventurar em jogos de estilo souls like e indie, onde posso aplicar até mesmo conhecimentos de programação para gerar padrões e estratégias de jogo. Acredito que essas experiências aprimoram minha capacidade de análise e resolução de problemas, habilidades que levo comigo para o desenvolvimento de software.",
+
+    "technologiesSection": "Tecnologias",
+
+    "experiencesSection" : "Experiências",
+
+    "experiences": [
+        {
+            "year": "2023 - Presente",
+            "role": "Estagiário de Programação",
+            "company": "Segure - Segurança do Trabalho",
+            "description": "Nesta experiência, atuei na implementação de novas funcionalidades e na manutenção do software da organização. Desenvolvi aplicações web utilizando PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) e MySQL. Dentre as minhas contribuições mais significativas, destaco a criação de um método de automatização dos módulos de GHE e Plano de Ação no site, que facilitou a criação de documentos e reduziu significativamente o prazo de entrega. Essa inovação proporcionou um fluxo de trabalho muito mais eficiente para os funcionários responsáveis por essas tarefas.",
+            "technologies": ["JavaScript", "React.js", "PHP (CodeIgniter)", "Bootstrap", "MySQL"]
+        }
+    ],
+
+    "projects": [
+        {
+            "title": "Pokedex",
+            "image": "/src/assets/projects/project1.jpg",
+            "description": "Pokedex totalmente funcional onde você pode filtrar por personagens, ver suas habilidades e muito mais!",
+            "technologies": ["HTML", "CSS", "React.js", "Tailwind"]
+        },
+        {
+            "title": "E-commerce",
+            "image": "/src/assets/projects/project1.jpg",
+            "description": "Um site de comércio eletrônico totalmente funcional com recursos como lista de produtos, carrinho de compras e autenticação de usuário.",
+            "technologies": ["HTML", "CSS", "React.js", "Tailwind", "Java Spring Boot", "PostgreSQL"]
+        },
+        {
+            "title": "Tela de Login",
+            "image": "/src/assets/projects/project3.jpg",
+            "description": "Uma tela onde você pode se cadastrar, logar e solicitar recuperação de senha.",
+            "technologies": ["HTML", "CSS", "React.js", "Tailwind", "Laravel", "Docker", "MySQL"]
+        }
+    ],
+
+    "adressSection": "Endereço: ",
+    "phoneSection": "Telefone: ",
+    "address": "Canoas, RS",
+    "phoneNumber": "+55 51 998267655",
+    "email": "guilopes1003@gmail.com"
+}

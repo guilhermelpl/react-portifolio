@@ -1,8 +1,10 @@
-import { CONTACT } from "../config/constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaGooglePlusG, FaLinkedin } from "react-icons/fa";
 
-const Contact = ({ translate }) => {
+const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -12,12 +14,12 @@ const Contact = ({ translate }) => {
           transition={{ duration: 1.5 }}
           className="w-full flex flex-col items-center justify-center"
         >
-          <h2 className="pb-10 text-4xl font-thin tracking-tight lg:mt-5">{translate ? "Contact Me" : "Contate-Me"}</h2>
+          <h2 className="pb-10 text-4xl font-thin tracking-tight lg:mt-5">{t("contactSection")}</h2>
           <span>
-            {translate ? "Adress: " : "Endereço: "} {CONTACT.address}
+            {t("adressSection")} {t("address")}
           </span>
           <span>
-            {translate ? "Phone: " : "Telefone: "} {CONTACT.phoneNo}{" "}
+          {t("phoneSection")} {t("phoneNumber")}
           </span>
           <div className="flex my-2 items-center justify-center gap-4 text-3xl">
             <FaLinkedin

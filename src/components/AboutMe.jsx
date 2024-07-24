@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import aboutImg from "../assets/photo_about.jpg";
-import { ABOUT_TEXT_EN, ABOUT_TEXT_PT } from "../config/constants";
 import { motion } from "framer-motion";
 
-const AboutMe = ({ translate }) => {
+const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -11,7 +13,7 @@ const AboutMe = ({ translate }) => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        {translate ? "About Me" : "Sobre mim"}
+        {t("aboutSection")}
       </motion.h2>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 lg:p-8">
@@ -34,7 +36,7 @@ const AboutMe = ({ translate }) => {
               transition={{ duration: 0.5 }}
               className="my-2 max-w-xl py-6"
             >
-              {translate ? ABOUT_TEXT_EN : ABOUT_TEXT_PT}
+              {t("aboutMeContent")}
             </motion.p>
           </div>
         </div>

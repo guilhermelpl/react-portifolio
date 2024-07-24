@@ -1,7 +1,9 @@
-import { EXPERIENCES } from "../config/constants";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-const Experience = ({ translate }) => {
+const Experience = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -10,9 +12,9 @@ const Experience = ({ translate }) => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        {translate ? "Experiences" : "Experiências"}
+        {t("experiencesSection")}
       </motion.h2>
-      {EXPERIENCES.map((experience, index) => (
+      {t("experiences", { returnObjects: true }).map((experience, index) => (
         <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
           <div className="w-full lg:w-1/4">
             <motion.p
@@ -21,7 +23,7 @@ const Experience = ({ translate }) => {
               transition={{ duration: 1.5 }}
               className="mb-2 text-sm text-neutral-400"
             >
-              {translate ? experience.year : experience.ano}
+              {experience.year}
             </motion.p>
           </div>
           <motion.div
@@ -31,11 +33,9 @@ const Experience = ({ translate }) => {
             className="w-full max-w-xl lg:w-3/4"
           >
             <h6 className="mb-2 font-semibold">
-              {translate
-                ? experience.role + " - " + experience.company
-                : experience.funcao + " - " + experience.company}
+              {experience.role + " - " + experience.company}
             </h6>
-            <p>{translate ? experience.description : experience.descricao}</p>
+            <p>{experience.description}</p>
             {experience.technologies.map((technologie, index) => (
               <motion.span
                 key={index}

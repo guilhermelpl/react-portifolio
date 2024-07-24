@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const icons = (duration) => ({
   initial: { y: -10 },
@@ -17,7 +18,9 @@ const icons = (duration) => ({
   },
 });
 
-const Technologies = ({ translate }) => {
+const Technologies = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="border-b border-neutral-900 pb-24">
       <motion.h2
@@ -26,7 +29,7 @@ const Technologies = ({ translate }) => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        {translate ? "Technologies" : "Tecnologias"}
+        {t("technologiesSection")}
       </motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div
