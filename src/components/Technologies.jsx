@@ -1,9 +1,11 @@
-import { DiPhp } from "react-icons/di";
+import { DiCodeigniter, DiPhp } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { LiaVuejs } from "react-icons/lia";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const icons = (duration) => ({
   initial: { y: -10 },
@@ -22,7 +24,7 @@ const Technologies = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="border-b border-neutral-900 pb-24">
+    <div className="border-b border-neutral-900 pb-16">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -38,10 +40,26 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <IoLogoJavascript className="text-7xl text-yellow-400" />
         </motion.div>
         <motion.div
           variants={icons(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiReactjsLine className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          variants={icons(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <LiaVuejs className="text-7xl text-green-400" />
+        </motion.div>
+        <motion.div
+          variants={icons(4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -54,7 +72,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiTailwindCssFill className="text-7xl text-gray-700" />
+          <DiCodeigniter className="text-7xl text-red-500" />
         </motion.div>
         <motion.div
           variants={icons(3)}
@@ -62,10 +80,18 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql className="text-7xl text-cyan-400" />
+          <RiTailwindCssFill className="text-7xl text-gray-700" />
         </motion.div>
         <motion.div
           variants={icons(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiMysql className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          variants={icons(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"

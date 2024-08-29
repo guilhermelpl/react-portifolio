@@ -14,12 +14,12 @@ const Contact = () => {
           transition={{ duration: 1.5 }}
           className="w-full flex flex-col items-center justify-center"
         >
-          <h2 className="pb-10 text-4xl font-thin tracking-tight lg:mt-5">{t("contactSection")}</h2>
+          <h2 className="pb-10 text-4xl lg:mt-5">{t("contactSection")}</h2>
           <span>
             {t("adressSection")} {t("address")}
           </span>
           <span>
-          {t("phoneSection")} {t("phoneNumber")}
+            {t("phoneSection")} {t("phoneNumber")}
           </span>
           <div className="flex my-2 items-center justify-center gap-4 text-3xl">
             <FaLinkedin

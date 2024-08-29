@@ -30,29 +30,9 @@ const NavBar = ({
 
   return (
     <>
-      <nav className="mb-20 flex flex-col mt-4 sm:flex-row items-center justify-between py-2">
+      <nav className="mb-6 flex flex-col mt-4 sm:flex-row items-center justify-between py-2">
         <div>
           <img className="mx-2 w-10" src={logo} alt="Logo" />
-        </div>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-4 sm:mt-0 tracking-tight">
-          <span
-            className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
-            onClick={() => Section(experienceRef)}
-          >
-            {t('header')}
-          </span>
-          <span
-            className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
-            onClick={() => Section(projectsRef)}
-          >
-            {t('projectsSection')}
-          </span>
-          <span
-            className="text-1xl cursor-pointer hover:text-orange-500 transition duration-300"
-            onClick={() => Section(contactRef)}
-          >
-            {t('contactSection')}
-          </span>
         </div>
         <div className="flex gap-4 mt-4 sm:mt-0 items-center">
           <MdGTranslate
