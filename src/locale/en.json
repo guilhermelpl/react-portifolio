@@ -16,11 +16,18 @@
 
     "experiences": [
         {
-            "year": "2023 - Present",
+            "year": "April 2023 - August 2024",
             "role": "Programming Intern",
             "company": "Segure - Segurança do Trabalho",
             "description": "In this experience, I worked with the implementation of new features and maintenance in the company's software. Developing web applications using PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs), and MySQL tools. My most significant contributions include the creation of a method to automate the GHE and Action Plan modules on the website, which facilitated document creation and significantly reduced delivery time. This innovation provided a much more efficient workflow for the employees responsible for these tasks.",
             "technologies": ["JavaScript", "React.js", "PHP (CodeIgniter)", "Bootstrap", "MySQL"]
+        },
+        {
+          "year": "September 2024 - present",
+          "role": "Full Stack Developer",
+          "company": "Pag Brasil",
+          "description": "In this experience, I work with the implementation of new features and maintenance in the componay's software. Developing web applications using PHP, Vue.js, Vuex, Vuetify and MySQL",
+          "technologies": ["JavaScript", "Vue", "PHP", "Vuetify", "MySQL"]
         }
     ],
 

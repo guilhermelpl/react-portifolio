@@ -17,12 +17,19 @@
 
     "experiences": [
         {
-            "year": "2023 - Presente",
+            "year": "Abril 2023 - Agosto 2024",
             "role": "Estagiário de Programação",
             "company": "Segure - Segurança do Trabalho",
             "description": "Nesta experiência, atuei na implementação de novas funcionalidades e na manutenção do software da organização. Desenvolvi aplicações web utilizando PHP (CodeIgniter), HTML, CSS, JavaScript (ReactJs) e MySQL. Dentre as minhas contribuições mais significativas, destaco a criação de um método de automatização dos módulos de GHE e Plano de Ação no site, que facilitou a criação de documentos e reduziu significativamente o prazo de entrega. Essa inovação proporcionou um fluxo de trabalho muito mais eficiente para os funcionários responsáveis por essas tarefas.",
             "technologies": ["JavaScript", "React.js", "PHP (CodeIgniter)", "Bootstrap", "MySQL"]
-        }
+        },
+        {
+            "year": "Setembro 2024 - Presente",
+            "role": "Full Stack Developer",
+            "company": "Pag Brasil",
+            "description": "Nesta experiência, atuo na implementação de novas funcionalidades e na manutenção do software da organização. Desenvolvi aplicações web utilizand PHP, Vue.js, Vuex, Vuetify and MySQL",
+            "technologies": ["JavaScript", "Vue", "PHP", "Vuetify", "MySQL"]
+          }
     ],
 
     "projects": [
